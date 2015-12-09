@@ -24,3 +24,11 @@
 10. 改 deny from all 为allow from all，注释127.0.0.1那行
 11. 修改完成，重启服务
 12. 打开系统 hosts 文件，添加 127.0.0.1 xxx.com
+
+
+# 自定义 Apache 端口号
+1. 打开 Apache 配置文件，搜索 80
+2. 改 listen 80
+3. 改 servername localhost:80
+4. 上面两个要一致。重启服务。
+
